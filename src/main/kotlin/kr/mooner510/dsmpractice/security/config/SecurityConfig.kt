@@ -42,6 +42,29 @@ class SecurityConfig(
 
                 it.requestMatchers(HttpMethod.GET, "/v1/**").permitAll()
 
+                it.requestMatchers(HttpMethod.POST, "/api/auth/sign-in", "/api/auth/sign-up").permitAll()
+                it.requestMatchers(HttpMethod.POST, "/api/auth/reissue").permitAll()
+
+                it.requestMatchers(
+                    HttpMethod.GET,
+                    "/api/page",
+                    "/api/page/{id}",
+                    "/api/page/search",
+                    "/api/page/user",
+                    "/api/page/suggest"
+                ).permitAll()
+                it.requestMatchers(HttpMethod.POST, "/api/page").authenticated()
+                it.requestMatchers(HttpMethod.PUT, "/api/page/{id}").authenticated()
+                it.requestMatchers(HttpMethod.DELETE, "/api/page/{id}").authenticated()
+
+                it.requestMatchers(HttpMethod.GET, "/api/tag/list").permitAll()
+
+                it.requestMatchers(HttpMethod.POST, "/api/user/thumbnail").authenticated()
+                it.requestMatchers(HttpMethod.GET, "/api/user/me").authenticated()
+                it.requestMatchers(HttpMethod.GET, "/api/user/{id}").permitAll()
+
+                it.requestMatchers(HttpMethod.GET, "/api/image/{id}").permitAll()
+
                 it.anyRequest().denyAll()
             }
             .with(FilterConfiguration(tokenProvider, objectMapper), Customizer.withDefaults())

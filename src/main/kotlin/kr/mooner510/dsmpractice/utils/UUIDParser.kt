@@ -12,4 +12,8 @@ object UUIDParser {
             throw GlobalError(ErrorCode.INVALID_UUID)
         }
     }
+
+    fun UUID.toURL(): String {
+        return "/api/image/${this}"
+    }
 }

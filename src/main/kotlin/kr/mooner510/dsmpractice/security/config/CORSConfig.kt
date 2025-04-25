@@ -10,7 +10,10 @@ class CORSConfig : WebMvcConfigurer {
         registry.addMapping("/**")
             .allowedOrigins(
                 "http://localhost:3000",
-                "http://localhost"
+                "http://localhost",
+                "https://dsm-api.mooner510.kr",
+                "https://dsm-practice.vercel.app",
+                "https://decord-alpha.vercel.app"
             )
             .allowedMethods("*")
     }

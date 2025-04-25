@@ -29,4 +29,36 @@ class SwaggerConfig {
             .pathsToMatch("/api/auth/**")
             .build()
     }
+
+    @Bean
+    fun page(): GroupedOpenApi {
+        return GroupedOpenApi.builder()
+            .group("페이지")
+            .pathsToMatch("/api/page/**")
+            .build()
+    }
+
+    @Bean
+    fun user(): GroupedOpenApi {
+        return GroupedOpenApi.builder()
+            .group("유저")
+            .pathsToMatch("/api/user/**")
+            .build()
+    }
+
+    @Bean
+    fun file(): GroupedOpenApi {
+        return GroupedOpenApi.builder()
+            .group("파일")
+            .pathsToMatch("/api/image/**")
+            .build()
+    }
+
+    @Bean
+    fun tag(): GroupedOpenApi {
+        return GroupedOpenApi.builder()
+            .group("태그")
+            .pathsToMatch("/api/tag/**")
+            .build()
+    }
 }
