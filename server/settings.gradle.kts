@@ -1,1 +1,1 @@
-rootProject.name = "dsm-practice"
+rootProject.name = "board"

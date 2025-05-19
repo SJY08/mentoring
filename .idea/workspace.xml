@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="99cc5996-92a4-4062-bf26-61aa6bede9a0" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/example/board/BoardAppApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/example/board/config/SecurityConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/example/board/controller/AuthController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/example/board/controller/BoardController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/example/board/dto/AuthRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/example/board/dto/AuthResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/example/board/dto/BoardRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/example/board/dto/BoardResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/example/board/entity/Board.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/example/board/entity/User.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/example/board/repository/BoardRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/example/board/repository/UserRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/example/board/service/AuthService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/example/board/service/BoardService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/example/board/util/JwtUtil.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/DsmPracticeApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/file/controller/FileController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/file/data/entity/FileEntity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/file/repository/FileEntityRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/file/service/FileService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/pages/controller/PageController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/pages/data/dto/PageContentDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/pages/data/entity/PageContent.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/pages/data/entity/PageTagMapping.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/pages/data/entity/PageUserMapping.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/pages/data/entity/PageVisit.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/pages/data/request/PageContentRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/pages/data/types/PageScope.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/pages/data/types/PageSort.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/pages/repository/PageRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/pages/repository/PageTagMappingRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/pages/repository/PageVisitRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/pages/service/PageService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/tag/controller/TagController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/tag/data/dto/TagDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/tag/data/entity/Tag.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/tag/repository/TagRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/domain/tag/service/TagService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/global/config/SwaggerConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/global/data/entity/BaseEntity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/global/data/entity/BaseEntityCreateOnly.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/global/error/ErrorCode.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/global/error/ErrorHandler.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/global/error/data/ErrorResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/global/error/data/GlobalError.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/component/ExceptionFilter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/component/JwtFilter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/component/LoggingFilter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/component/TokenProvider.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/config/CORSConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/config/FilterConfiguration.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/config/SecurityConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/controller/AuthController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/controller/UserController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/data/dto/UserDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/data/entity/JwtToken.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/data/entity/user/Admin.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/data/entity/user/Student.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/data/entity/user/User.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/data/request/LoginRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/data/request/ReissueRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/data/response/TokenResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/data/response/TokenResponseAccessOnly.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/data/types/UserType.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/repository/JwtTokenRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/repository/UserRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/service/AuthService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/security/service/UserService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/kotlin/kr/mooner510/dsmpractice/utils/UUIDParser.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/settings.gradle.kts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2xIGsc4sum1HQyE80e9OvfIV3aP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/reven/github/mentoring&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="99cc5996-92a4-4062-bf26-61aa6bede9a0" name="변경" comment="" />
+      <created>1747618382115</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747618382115</updated>
+      <workItem from="1747618383463" duration="471000" />
+      <workItem from="1747618897458" duration="17000" />
+      <workItem from="1747619324489" duration="73000" />
+      <workItem from="1747622517027" duration="13000" />
+      <workItem from="1747622536728" duration="36000" />
+      <workItem from="1747632288902" duration="29000" />
+      <workItem from="1747632322990" duration="19000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
