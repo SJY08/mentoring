@@ -18,14 +18,16 @@ function Login() {
                         <Input label="아이디" />
                         <Input label="비밀번호" type="password" />
                         <div className="w-full">
-                            <Button>회원가입</Button>
+                            <Button onClick={() => router.push("/boards")}>
+                                로그인
+                            </Button>
                             <p className="text-center">
                                 아직 회원이 아니신가요 ?{" "}
                                 <span
                                     className="font-semibold text-blue-500 cursor-pointer"
                                     onClick={() => router.push("/signup")}
                                 >
-                                    로그인
+                                    회원가입
                                 </span>
                             </p>
                         </div>
