@@ -19,7 +19,9 @@ function Signup() {
                         <Input label="아이디" />
                         <Input label="비밀번호" type="password" />
                         <div className="w-full">
-                            <Button>회원가입</Button>
+                            <Button onClick={() => router.push("boards")}>
+                                회원가입
+                            </Button>
                             <p className="text-center">
                                 이미 회원이신가요 ?{" "}
                                 <span
