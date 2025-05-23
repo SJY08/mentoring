@@ -9,9 +9,19 @@ interface props {
     placeholder?: string
     type?: string
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
+    onTextAreaChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void
+    input?: boolean
 }
 
-function Input({ label, value, placeholder, type, onChange }: props) {
+function Input({
+    label,
+    value,
+    placeholder,
+    type,
+    input = true,
+    onChange,
+    onTextAreaChange,
+}: props) {
     const [show, setShow] = useState<boolean>(false)
 
     return (
@@ -19,20 +29,29 @@ function Input({ label, value, placeholder, type, onChange }: props) {
             <div className="w-full flex justify-center items-start flex-col gap-0.5">
                 <label className="font-semibold text-lg">{label}</label>
 
-                <div className="w-full h-8 flex justify-center items-center border-gray-500 border rounded-sm  box-border p-1">
-                    <input
-                        type={
-                            type == "password"
-                                ? show
-                                    ? "text"
-                                    : "password"
-                                : type
-                        }
-                        value={value}
-                        placeholder={placeholder}
-                        onChange={onChange}
-                        className="w-full h-full border-none outline-none"
-                    />
+                <div className="w-full flex justify-center items-center border-gray-500 border rounded-sm  box-border p-1">
+                    {input ? (
+                        <input
+                            type={
+                                type == "password"
+                                    ? show
+                                        ? "text"
+                                        : "password"
+                                    : type
+                            }
+                            value={value}
+                            placeholder={placeholder}
+                            onChange={onChange}
+                            className="w-full h-full border-none outline-none"
+                        />
+                    ) : (
+                        <textarea
+                            value={value}
+                            placeholder={placeholder}
+                            onChange={onTextAreaChange}
+                            className="w-full h-60 border-none outline-none resize-none"
+                        />
+                    )}
 
                     {type == "password" && (
                         <div
